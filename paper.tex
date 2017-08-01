@@ -1,0 +1,60 @@
+\def\final{0}
+
+\documentclass[11pt]{article}
+\usepackage{fullpage}
+\usepackage{enumitem,amssymb}
+\usepackage{authblk}
+
+\usepackage{tcs-macros}
+\usepackage{quantum-macros} % Xiaodi's Macro
+
+\numberwithin{equation}{section}
+
+%%% Author Comments %%%
+\newcommand{\wnote}[1]{\rednote{WWW: {#1}}}
+\newcommand{\xnote}[1]{\bluenote{XXX: {#1}}}
+\newcommand{\ynote}[1]{\greennote{Yi-Hsiu: {#1}}}
+\newcommand{\znote}[1]{\yellownote{ZZZ: {#1}}}
+
+\author[1]{
+  \small Yi-Hsiu Chen\thanks{\texttt{yihsiuchen@g.harvard.edu}.}}
+\author[2]{
+  \small WWW\thanks{\texttt{www@www.edu}.}}
+\author[2]{
+  \small WWW2\thanks{\texttt{www@www.edu}.}}
+\author[3]{
+  \small YYY\thanks{\texttt{yyy@yyy.edu}.
+  Work done in part while visiting the xxx. Supported by NSF grant xxx and a Simons Investigator Award.}}
+\author[4]{
+  \small ZZZ2\thanks{\texttt{zzz@zzz.edu}.}}
+
+\affil[1]{Harvard John A. Paulson School Of Engineering And Applied Sciences, Harvard University, USA}
+\affil[2]{Institute, City, Country}
+\affil[3]{Institute, City, Country}
+\affil[4]{Institute, City, Country}
+
+
+\title{Title}
+
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+  We ...
+\end{abstract}
+
+\section{Introduction}
+
+Citation Test \cite{BCV16}
+
+Comment Test \ynote{notes}
+
+
+
+
+\bibliographystyle{alpha}
+\bibliography{paper}
+
+\end{document}

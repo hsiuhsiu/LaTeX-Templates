@@ -1,0 +1,66 @@
+\ProvidesPackage{quantum-macros}
+
+\RequirePackage{braket}
+
+\newcommand{\mix}{\mathsf{mix}}
+
+\newcommand{\Ketbra}[1]{\Ket{#1}\Bra{#1}}
+\newcommand{\ketbra}[1]{\ket{#1}\bra{#1}}
+
+\DeclareMathOperator{\Tr}{Tr}
+\newcommand{\ot}{\otimes}
+\newcommand{\tr}[2][]{\Tr_{#1}\left(#2\right)}
+
+\newcommand{\snorm}[1]{\lVert\tinyspace#1\tinyspace\rVert}
+\newcommand{\abs}[1]{\left\lvert\tinyspace #1 \tinyspace\right\rvert}
+\newcommand{\ceil}[1]{\left\lceil #1 \right\rceil}
+\newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
+\def\iso{\cong}
+\newcommand{\defeq}{\stackrel{\smash{\text{\tiny def}}}{=}}
+\newcommand{\rank}{\operatorname{rank}}
+\renewcommand{\det}{\operatorname{Det}}
+%\renewcommand{\vec}{\operatorname{vec}}
+\newcommand{\im}{\operatorname{Im}}
+\renewcommand{\t}{{\scriptscriptstyle\mathsf{T}}}
+\newcommand{\ip}[2]{\left\langle #1 , #2\right\rangle}
+\newcommand{\ipp}[1]{\left\langle #1 \right\rangle}
+\newcommand{\sip}[2]{\langle #1 | #2\rangle}
+
+%\def\bias{\epsilon_{\text{bias}}}
+\def\({\left(}
+\def\){\right)}
+\def\I{\mathsf{id}}
+
+
+\newcommand{\fid}{\operatorname{F}}
+\newcommand{\setft}[1]{\mathrm{#1}}
+\newcommand{\lin}[1]{\setft{L}\left(#1\right)}
+%\newcommand{\density}[1]{\setft{\mathcal{S}_{=}}\left(#1\right)}
+\newcommand{\density}[1]{\cD\left(#1\right)}
+\newcommand{\subdens}[1]{\setft{\mathcal{S}_{\leq}}\left(#1\right)}
+\newcommand{\unitary}[1]{\setft{U}\left(#1\right)}
+\newcommand{\trans}[1]{\setft{T}\left(#1\right)}
+\newcommand{\herm}[1]{\setft{Herm}\left(#1\right)}
+\newcommand{\pos}[1]{\setft{Pos}\left(#1\right)}
+\newcommand{\pd}[1]{\setft{Pd}\left(#1\right)}
+\newcommand{\sphere}[1]{\mathcal{S}\!\left(#1\right)}
+\newcommand{\opset}[3]{\setft{#1}_{#2}\!\left(#3\right)}
+
+\def\complex{\mathbb{C}}
+\def\real{\mathbb{R}}
+\def\natural{\mathbb{N}}
+\def\integer{\mathbb{Z}}
+\def\re{\mathrm{re}}
+\def\im{\mathrm{im}}
+
+\def\<{\langle}
+\def\>{\rangle}
+\def \lket {\left|}
+\def \rket {\right\rangle}
+\def \lbra {\left\langle}
+\def \rbra {\right|}
+%\newcommand{\ket}[1]{\lket #1 \rket}
+%\newcommand{\ket}[1]{\lket\microspace #1 \microspace\rket}
+%\newcommand{\bra}[1]{\lbra\microspace #1 \microspace\rbra}
+%\newcommand{\ketbra}[1]{\lket\microspace #1 \rangle \langle #1 \microspace\rbra}
+
