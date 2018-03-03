@@ -1,7 +1,7 @@
 \ProvidesPackage{tcs-macros}
 
-\RequirePackage[fleqn]{amsmath} % fleqn
-\RequirePackage{amsfonts,mathtools,amsthm}
+\RequirePackage{amsmath} % fleqn
+\RequirePackage{amsfonts,mathtools,amsthm,amssymb}
 
 %%% Appearance and Color Notes %%%
 \RequirePackage{xargs}
@@ -62,9 +62,12 @@
 
 %%% math operators %%%
 \DeclareMathOperator*{\Ex}{E}
+\DeclareMathOperator*{\KL}{KL}
 \newcommand{\ex}[2][]{\Ex_{#1}\left[#2\right]}
 \newcommand{\pr}[2][]{\Pr_{#1}\left[#2\right]}
+\newcommand{\kl}[2]{\KL\left(#1\middle\|#2\right)}
 \newcommand{\size}[1]{\left|#1\right|}
+
 
 \DeclareMathOperator{\Supp}{Supp}
 \DeclareMathOperator{\poly}{poly}
@@ -106,7 +109,7 @@
 % mathbf letters
 \def\mydefb#1{\expandafter\def\csname b#1\endcsname{\mathbf{#1}}}
 \def\mydefallb#1{\ifx#1\mydefallb\else\mydefb#1\expandafter\mydefallb\fi}
-\mydefallb ABCDEFGHIJKLMNOPQRSTUVWXYZ\mydefallb
+\mydefallb ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\mydefallb
 \def\mydefgreek#1{\expandafter\def\csname b#1\endcsname{\text{\boldmath$\mathbf{\csname #1\endcsname}$}}}
 \def\mydefallgreek#1{\ifx\mydefallgreek#1\else\mydefgreek{#1}%
    \lowercase{\mydefgreek{#1}}\expandafter\mydefallgreek\fi}
